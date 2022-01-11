@@ -1,0 +1,7 @@
+<%= render 'shared/edit_sub_section' do %>
+    <%= project.text_field :company, value: project.object.company, placeholder: "title" %><br/>
+    <%= project.text_field :project_url, value: project.object.position, placeholder: "project_url" %><br/>
+    <%= project.text_field :techstack, value: project.object.techstack, placeholder: "techstack" %><br/>
+    <%= project.text_area :description, value: project.object.description, placeholder: "Description" %><br/>
+    <%= render 'shared/input/buttons/delete', type: project %>
+<% end %>
